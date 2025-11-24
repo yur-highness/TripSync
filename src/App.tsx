@@ -5,7 +5,7 @@ import  { useLayoutEffect, useRef } from 'react';
 import { 
   Bot, Globe2, Sparkles,
   CheckCircle2,LayoutDashboard, 
-  CreditCard, Map,  ChevronRight, Star,
+  CreditCard, Map,  ChevronRight,
    MapPin, 
   DollarSign,
 } from 'lucide-react';
