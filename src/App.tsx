@@ -161,15 +161,21 @@ const mainRef = useRef<HTMLDivElement>(null);
             </div>
             <span className="text-xl font-bold tracking-tight font-display group-hover:text-indigo-200 transition-colors">TripSync</span>
           </div>
+        
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-            {['Platform', 'Workflow', 'features', 'Pricing'].map((item, i) => (
+            {['', 'Workflow', 'features', 'Pricing'].map((item, i) => (
                 <a key={i} href={`#${item.toLowerCase()}`} className="navbar-item hover:text-white transition-colors relative group">
                     {item}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
+                
             ))}
           </div>
           <div className="navbar-item flex items-center gap-4">
+               <a  href={`https://trip-sync-io.vercel.app/`} className="navbar-item hover:text-white transition-colors relative group">
+    
+                   <button className='cursor-pointer border-2 hover:bg-fuchsia-400/50 rounded-lg  px-4 py-2'>Platform</button>
+                   </a>
             {/* <Link to="/login" className="hidden md:block text-sm font-medium text-slate-300 hover:text-white transition-colors">
               Log in
             </Link>
